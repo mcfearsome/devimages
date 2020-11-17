@@ -4,7 +4,7 @@ FROM golang:$VERSION-buster
 WORKDIR /usr/src/app
 
 # setup okteto message
-COPY bashrc /root/.bashrc
+COPY okteto-go/bashrc /root/.bashrc
 
 RUN apt update
 RUN apt install build-essential
