@@ -7,7 +7,7 @@ WORKDIR /usr/src/app
 COPY okteto-go/bashrc /root/.bashrc
 
 RUN apt update
-RUN apt install build-essential
+RUN apt install -y build-essential
 
 RUN go get github.com/codegangsta/gin && \
     go get -u github.com/go-delve/delve/cmd/dlv && \
